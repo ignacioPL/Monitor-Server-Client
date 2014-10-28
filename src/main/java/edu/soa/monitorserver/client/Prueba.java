@@ -9,7 +9,7 @@ public class Prueba {
 
 	public static void main(String[] args) {
 		
-		ProcessDAO pd = new ProcessDAO("http://localhost:8080/proceso");
+		ProcessDAO pd = new ProcessDAO("http://localhost:8080");
 		
 		List<Proceso> lp;
 		lp = pd.obtenerProcesos();
