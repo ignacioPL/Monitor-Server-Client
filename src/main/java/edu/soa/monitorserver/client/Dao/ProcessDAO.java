@@ -1,4 +1,4 @@
-package edu.soa.monitorserver.client;
+package edu.soa.monitorserver.client.Dao;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,7 +27,7 @@ public class ProcessDAO {
 		
 		restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
 		
-		ResponseEntity<Proceso[]> array = restTemplate.getForEntity(this.urlDestino, Proceso[].class);
+		ResponseEntity<Proceso[]> array = restTemplate.getForEntity(this.urlDestino+"/proceso", Proceso[].class);
 		
 		List<Proceso> lista = Arrays.asList(array.getBody());
 		

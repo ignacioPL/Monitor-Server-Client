@@ -2,6 +2,7 @@ package edu.soa.monitorserver.client;
 
 import java.util.List;
 
+import edu.soa.monitorserver.client.Dao.ProcessDAO;
 import edu.soa.monitorserver.client.model.Proceso;
 
 public class Prueba {
