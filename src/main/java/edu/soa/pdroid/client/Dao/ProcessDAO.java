@@ -1,4 +1,4 @@
-package edu.soa.monitorserver.client.Dao;
+package edu.soa.pdroid.client.Dao;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
-import edu.soa.monitorserver.client.model.Proceso;
+import edu.soa.pdroid.client.model.Proceso;
 
 public class ProcessDAO {
 
@@ -27,7 +27,7 @@ public class ProcessDAO {
 		
 		restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
 		
-		ResponseEntity<Proceso[]> array = restTemplate.getForEntity(this.urlDestino+"/proceso", Proceso[].class);
+		ResponseEntity<Proceso[]> array = restTemplate.getForEntity(this.urlDestino+"/process", Proceso[].class);
 		
 		List<Proceso> lista = Arrays.asList(array.getBody());
 		
