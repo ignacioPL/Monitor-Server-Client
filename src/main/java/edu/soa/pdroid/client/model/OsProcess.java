@@ -3,7 +3,7 @@ package edu.soa.pdroid.client.model;
 /**
  * Created by ignacio on 18/08/14.
  */
-public class Proceso {
+public class OsProcess {
 
     private String pid;
     private String name;
@@ -11,7 +11,7 @@ public class Proceso {
     private String state;
     private String pmem;
 
-    public Proceso() {
+    public OsProcess() {
     }
 
     public String getPid() {
@@ -56,7 +56,7 @@ public class Proceso {
 
 	@Override
 	public String toString() {
-		return "Proceso [pid=" + pid + ", name=" + name + ", pcpu=" + pcpu
+		return "OsProcess [pid=" + pid + ", name=" + name + ", pcpu=" + pcpu
 				+ ", state=" + state + ", pmem=" + pmem + "]";
 	}
 
